@@ -1,0 +1,11 @@
+services:
+#    antidot_toolbox.example:
+#        class: Antidot\ToolboxBundle\Example
+#        arguments: ["@service_id", "plain_value", "%parameter%"]
+
+    # makes classes in src/AppBundle available to be used as services
+    # this creates a service per class whose id is the fully-qualified class name
+    AppBundle\:
+        resource: '../../Services/*'
+        # you can exclude directories or files
+        # but if a service is unused, it's removed anyway
