@@ -1,0 +1,25 @@
+{
+    "name": "antidot-be/toolbox-bundle",
+    "type": "symfony-bundle",
+    "license": "GPL-3.0-only",
+    "autoload": {
+        "psr-4": { "Antidot\\ToolboxBundle\\": "" },
+        "exclude-from-classmap": [
+            "/Tests/"
+        ]
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\": "tests/"
+        },
+        "files": [
+            "vendor/symfony/symfony/src/Symfony/Component/VarDumper/Resources/functions/dump.php"
+        ]
+    },
+    "require": {
+        "php": ">=7.2"
+    },
+    "extra": {
+        "branch-alias": null
+    }
+}
